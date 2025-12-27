@@ -1,0 +1,129 @@
+body{
+  background-color: #2436FF;
+  margin: 0;
+}
+
+/* HEADER */
+.dashboard{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+/* HAMBURGER */
+.menu-btn{
+  width: 24px;
+  cursor: pointer;
+}
+
+.menu-btn span{
+  display: block;
+  height: 2px;
+  background: white;
+  margin: 5px 0;
+  border-radius: 2px;
+  transition: 0.25s ease;
+}
+
+/* MENU */
+.menu{
+  position: fixed;
+  top: 40px;
+  right: -220px;
+  width: 200px;
+}
+
+.menu.active{
+  right: 10px;
+}
+
+.menu a{
+  display: block;
+  background: white;
+  color: blue;
+  padding: 14px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+.profile img{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: block;
+  margin-top: 32px;
+  margin: auto;
+}
+.profile h2{
+  text-align: center;
+  color: white;
+  animation: animasi 1s ease;
+}
+@keyframes animasi{
+  from{
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.p{
+  margin-top: -10px;
+  text-align: center;
+  color: white;
+}
+.cursor{
+  animation: blink 1s infinite;
+  color: white;
+  text-align: center;
+}
+@keyframes blink{
+  0%, 50%, 100%{
+    opacity: 1;
+  }
+  25%,75%{
+    opacity: 0;
+  }
+}
+.social-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.social-btn {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.social-btn:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.6);
+}
+.tiktok:hover {
+  background: #1da1f2;
+}
+
+.whatsapp:hover {
+  background: #22c55e;
+}
+
+.instagram:hover {
+  background: linear-gradient(
+    45deg,
+    #4f46e5,
+    #3b82f6,
+    #06b6d4
+  );
+}
