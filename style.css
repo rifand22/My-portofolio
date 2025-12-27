@@ -1,22 +1,22 @@
-body{
+header{
   background-color: #2436FF;
-  margin: 0;
+  padding: 0px 10px 30px;
+  margin: -15px -10px -100px -10px;
 }
-
-/* HEADER */
+body{
+  background-color: #FAFAFA;
+  font-family: "Popins",Sans-serif;
+}
 .dashboard{
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px;
 }
-
-/* HAMBURGER */
 .menu-btn{
   width: 24px;
   cursor: pointer;
 }
-
 .menu-btn span{
   display: block;
   height: 2px;
@@ -29,7 +29,7 @@ body{
 /* MENU */
 .menu{
   position: fixed;
-  top: 40px;
+  top: 35px;
   right: -220px;
   width: 200px;
 }
